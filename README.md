@@ -50,10 +50,4 @@
 >
 >   * `total_days`: အဲ့ဒီအားလပ်ရက်အတွက် စုစုပေါင်း ပိတ်ရက်အရေအတွက် (ဥပမာ - `4 days`, `6 days`, `1 day`)
 
----
 
-<div align="center">
-
-<sub>Blending Myanmar tradition with modern technology • မြန်မာ့ရိုးရာယဉ်ကျေးမှုနှင့် ခေတ်မီနည်းပညာ ပေါင်းစပ်မှု 🇲🇲</sub>
-
-</div>
