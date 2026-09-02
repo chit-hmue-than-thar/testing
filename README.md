@@ -39,7 +39,7 @@
 
 ---
 
-### 📊 ဒေတာဖွဲ့စည်းပုံ မင်းဒ်မက် (Holiday Data Mind Map)
+### 📊 ဒေတာဖွဲ့စည်းပုံ အချိတ်အဆက် (Holiday Data Mind Map)
 
 ![Holiday Data Mind Map](./holiday-mindmap.svg)
 
@@ -172,7 +172,6 @@ export function getMyanmarSeason(month: number): MyanmarSeason {
 }
 ```
 
-စမ်းသပ်ခေါ်ယူမှုနှင့် ရလဒ်များ:
 - `getMyanmarSeason(0)` (ဇန်နဝါရီလ) အတွက် `cool` (ဆောင်းရာသီ) ဟု ရရှိပါမည်။
 - `getMyanmarSeason(3)` (ဧပြီလ) အတွက် `hot` (နွေရာသီ) ဟု ရရှိပါမည်။
 - `getMyanmarSeason(6)` (ဇူလိုင်လ) အတွက် `rainy` (မိုးရာသီ) ဟု ရရှိပါမည်။
