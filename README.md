@@ -52,7 +52,7 @@
 
 ---
 
-### 📊 ဒေတာဖွဲ့စည်းပုံ အချိတ်အဆက် (Holiday Data Mind Map)
+### 📊 Holiday Data Mind Map
 
 ![Holiday Data Mind Map](./holiday-mindmap.svg)
 
