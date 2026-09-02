@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Pyidaungsu:wght@500;700&amp;display=swap');
+      .bg { fill: #0d1117; }
+      .grid-pattern { stroke: #1f242c; stroke-width: 0.5; stroke-dasharray: 4,4; }
+      .node-card { fill: #161b22; stroke: #30363d; stroke-width: 1.5; rx: 8px; ry: 8px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
+      .node-card-active { fill: #161b22; stroke: #388bfd; stroke-width: 1.5; rx: 8px; ry: 8px; filter: drop-shadow(0 4px 12px rgba(56,139,253,0.2)); }
+      .text-key { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 600; fill: #58a6ff; }
+      .text-val { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; fill: #e6edf3; }
+      .text-mm { font-family: 'Pyidaungsu', 'Padauk', sans-serif; font-size: 14px; font-weight: 600; fill: #f0f6fc; }
+      .text-muted { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8b949e; }
+      .text-tag { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; fill: #79c0ff; }
+      .connector { fill: none; stroke: #30363d; stroke-width: 1.5; }
+      .connector-glow { fill: none; stroke: #58a6ff; stroke-width: 1.5; stroke-opacity: 0.6; }
+      .edge-label { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8b949e; }
+      .bullet-icon { fill: #21262d; stroke: #484f58; stroke-width: 1; rx: 3px; }
+      .bullet-minus { stroke: #8b949e; stroke-width: 1.5; stroke-linecap: round; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="480" class="bg" />
+  
+  <!-- Subtle Grid Pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1c2128" stroke-width="0.8" stroke-dasharray="2,4"/>
+  </pattern>
+  <rect width="1000" height="480" fill="url(#grid)" />
+
+  <!-- CONNECTOR CURVES (BEZIER) -->
+  <!-- Root to 2026 -->
+  <path d="M 180 180 C 270 180, 270 160, 360 160" class="connector-glow" />
+  <text x="260" y="150" class="edge-label">2026</text>
+
+  <!-- Root to 2027 -->
+  <path d="M 180 220 C 270 220, 270 310, 360 310" class="connector" />
+  <text x="260" y="270" class="edge-label">2027</text>
+
+  <!-- 2026 to January -->
+  <path d="M 525 150 C 620 150, 620 70, 720 70" class="connector" />
+  <text x="610" y="85" class="edge-label">holidays</text>
+
+  <!-- 2026 to February -->
+  <path d="M 525 170 C 620 170, 620 180, 690 180" class="connector" />
+  <text x="595" y="195" class="edge-label">holidays</text>
+
+  <!-- 2027 to January -->
+  <path d="M 525 300 C 620 300, 620 310, 720 310" class="connector" />
+  <text x="595" y="320" class="edge-label">holidays</text>
+
+  <!-- 2027 to February -->
+  <path d="M 525 320 C 620 320, 620 420, 720 420" class="connector" />
+  <text x="595" y="380" class="edge-label">holidays</text>
+
+  <!-- ROOT NODE: 2026 / 2027 Keys Overview -->
+  <g transform="translate(40, 160)" filter="url(#shadow)">
+    <rect width="140" height="76" class="node-card" />
+    
+    <!-- Item 1: 2026 -->
+    <rect x="14" y="16" width="14" height="14" class="bullet-icon" />
+    <line x1="17" y1="23" x2="25" y2="23" class="bullet-minus" />
+    <text x="36" y="28" class="text-key">2026:</text>
+    <text x="78" y="28" class="text-muted">{2 keys}</text>
+
+    <!-- Item 2: 2027 -->
+    <rect x="14" y="44" width="14" height="14" class="bullet-icon" />
+    <line x1="17" y1="51" x2="25" y2="51" class="bullet-minus" />
+    <text x="36" y="56" class="text-key">2027:</text>
+    <text x="78" y="56" class="text-muted">{2 keys}</text>
+  </g>
+
+  <!-- NODE: Year 2026 -->
+  <g transform="translate(360, 125)" filter="url(#shadow)">
+    <rect width="165" height="72" class="node-card" />
+    <text x="14" y="30" class="text-key">year:</text>
+    <text x="58" y="30" class="text-val">2026</text>
+
+    <rect x="14" y="43" width="12" height="12" class="bullet-icon" />
+    <line x1="16" y1="49" x2="24" y2="49" class="bullet-minus" />
+    <text x="32" y="53" class="text-key" font-size="12">holidays:</text>
+    <text x="100" y="53" class="text-muted" font-size="12">[2 items]</text>
+  </g>
+
+  <!-- NODE: Year 2027 -->
+  <g transform="translate(360, 275)" filter="url(#shadow)">
+    <rect width="165" height="72" class="node-card-active" />
+    <text x="14" y="30" class="text-key">year:</text>
+    <text x="58" y="30" class="text-val">2027</text>
+
+    <rect x="14" y="43" width="12" height="12" class="bullet-icon" />
+    <line x1="16" y1="49" x2="24" y2="49" class="bullet-minus" />
+    <text x="32" y="53" class="text-key" font-size="12">holidays:</text>
+    <text x="100" y="53" class="text-muted" font-size="12">[2 items]</text>
+  </g>
+
+  <!-- LEAF NODE 1: 2026 - January -->
+  <g transform="translate(720, 25)" filter="url(#shadow)">
+    <rect width="210" height="96" class="node-card" />
+    <text x="14" y="26" class="text-key">month:</text>
+    <text x="68" y="26" class="text-val">January</text>
+
+    <text x="14" y="54" class="text-key">name:</text>
+    <text x="60" y="54" class="text-mm">နိုင်ငံတကာနှစ်သစ်ကူး</text>
+
+    <text x="14" y="82" class="text-key">total_days:</text>
+    <text x="102" y="82" class="text-val" fill="#a5d6ff">4</text>
+  </g>
+
+  <!-- LEAF NODE 2: 2026 - February -->
+  <g transform="translate(690, 140)" filter="url(#shadow)">
+    <rect width="270" height="96" class="node-card" />
+    <text x="14" y="26" class="text-key">month:</text>
+    <text x="68" y="26" class="text-val">February</text>
+
+    <text x="14" y="54" class="text-key">name:</text>
+    <text x="60" y="54" class="text-mm">ပြည်ထောင်စုနေ့ &amp; တရုတ်နှစ်သစ်ကူး</text>
+
+    <text x="14" y="82" class="text-key">total_days:</text>
+    <text x="102" y="82" class="text-val" fill="#a5d6ff">6</text>
+  </g>
+
+  <!-- LEAF NODE 3: 2027 - January -->
+  <g transform="translate(720, 260)" filter="url(#shadow)">
+    <rect width="210" height="96" class="node-card" />
+    <text x="14" y="26" class="text-key">month:</text>
+    <text x="68" y="26" class="text-val">January</text>
+
+    <text x="14" y="54" class="text-key">name:</text>
+    <text x="60" y="54" class="text-mm">လွတ်လပ်ရေးနေ့</text>
+
+    <text x="14" y="82" class="text-key">total_days:</text>
+    <text x="102" y="82" class="text-val" fill="#a5d6ff">1</text>
+  </g>
+
+  <!-- LEAF NODE 4: 2027 - February -->
+  <g transform="translate(720, 370)" filter="url(#shadow)">
+    <rect width="210" height="96" class="node-card" />
+    <text x="14" y="26" class="text-key">month:</text>
+    <text x="68" y="26" class="text-val">February</text>
+
+    <text x="14" y="54" class="text-key">name:</text>
+    <text x="60" y="54" class="text-mm">ပြည်ထောင်စုနေ့</text>
+
+    <text x="14" y="82" class="text-key">total_days:</text>
+    <text x="102" y="82" class="text-val" fill="#a5d6ff">1</text>
+  </g>
+</svg>
