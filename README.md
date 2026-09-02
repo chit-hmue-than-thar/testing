@@ -1,6 +1,6 @@
 # Burma Calendar (မြန်မာပြက္ခဒိန်)
 
-![Burma Calendar Preview](./public/social-preview.png)
+![Burma Calendar Preview](./social-preview.png)
 
 ပုံများနှင့် အချက်အလက်များအား **ပြည်ထောင်စုသမ္မတမြန်မာနိုင်ငံတော် အစိုးရပြန်တမ်း** နှင့် **မြန်မာ့ပြက္ခဒိန် အစဉ်အလာများ** မှ ကူးယူကိုးကားဖော်ပြထားပါသည်။  
 ဒီဇိုင်းနှင့် Icon များအတွက် [Lucide Icons](https://lucide.dev/) နှင့် [Tailwind CSS](https://tailwindcss.com/) တို့ကို အသုံးပြုထားပါသည်။
