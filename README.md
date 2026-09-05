@@ -6,13 +6,11 @@
 
 > **Summary (အကျဉ်းချုပ်)**
 > 
-> ခုနှစ်နှင့် လကို ရွေးချယ်မယ် ➔ သက်ဆိုင်ရာ မြန်မာသက္ကရာဇ်နှင့် မြန်မာလတွဲကို အလိုအလျောက် တွက်ချက်ပြသမယ် ➔ တနင်္ဂနွေမှ စနေအထိ ၄၂ ကွက် ပြက္ခဒိန် Grid ပေါ်တွင် မြန်မာ/အင်္ဂလိပ် ရက်စွဲများနှင့်အတူ အစိုးရရုံးပိတ်ရက်များကို Highlight ပြုလုပ်ပေးမယ် ➔ ဘေးဘက် Sidebar တွင် လက်ရှိလအပါအဝင် ၃ လစာ ရုံးပိတ်ရက် စာရင်းချုပ်နှင့် စုစုပေါင်း ပိတ်ရက်အရေအတွက်ကို တစ်ချက်တည်း ကြည့်ရှုနိုင်မယ်။
+> ခုနှစ်နှင့် လကို ရွေးချယ်မယ် ➔ သက်ဆိုင်ရာ မြန်မာသက္ကရာဇ်နှင့် မြန်မာလတွဲပြီး အလိုအလျောက် တွက်ချက်ပြသမယ် ➔ တနင်္ဂနွေမှ စနေအထိ ၄၂ ကွက် ပြက္ခဒိန် Grid ပေါ်တွင် မြန်မာ/အင်္ဂလိပ် ရက်စွဲများနှင့်အတူ အစိုးရရုံးပိတ်ရက်များကို အနီရောင်ဖြင့် Highlight အထူးပြုအရောင်ခြယ်ပေးမယ် ➔ ဘေးဘက် Sidebar တွင် လက်ရှိလအပါအဝင် နောက်လ ၃ လစာ ရုံးပိတ်ရက် စာရင်းချုပ်နှင့် စုစုပေါင်း ပိတ်ရက်အရေအတွက်ကို တစ်ပြိုင်နက်တည်း ကြည့်ရှုနိုင်မယ်။
 
 ---
 
 ## 📖 မြန်မာပြက္ခဒိန် အခြေခံဗဟုသုတ (Myanmar Calendar Knowledge for Beginners)
-
-မြန်မာပြက္ခဒိန်ကို နားမလည်သေးသူများနှင့် Junior Developer များအတွက် ပြက္ခဒိန်ဖတ်နည်းနှင့် တွက်ချက်ပုံ အခြေခံများကို အောက်ပါအတိုင်း ရှင်းလင်းစွာ ဖော်ပြထားပါသည်။
 
 ### ၁။ မြန်မာသက္ကရာဇ် (ကောဇာသက္ကရာဇ်) တွက်ချက်ပုံ (Myanmar Era Calculation)
 မြန်မာသက္ကရာဇ် (ကောဇာသက္ကရာဇ်) သည် ခရစ်နှစ် (Gregorian Year) ထက် **၆၃၈ နှစ်** (သင်္ကြန်မတိုင်မီ **၆၃၉ နှစ်**) လျော့နည်းပါသည်။
@@ -144,72 +142,6 @@ graph TD
   * **`dates` (Array of Strings):** ပိတ်ရက်ကျရောက်သည့် ရက်စွဲများ (ဥပမာ - `["13", "14", "15", "16", "17"]`)။
   * **`total_days` (Number):** စုစုပေါင်း ပိတ်ရက်အရေအတွက် (ဥပမာ - `5`)။
   * **`type` (Optional String):** ပိတ်ရက်အမျိုးအစား (ဥပမာ - `Bridge Holiday`, `Public Holiday`)။
-
----
-
-## 🛠️ အသုံးပြုထားသော နည်းပညာများ (Tech Stack)
-
-* **Framework & UI:** [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-* **Build Tool:** [Vite](https://vitejs.dev/)
-* **Styling:** Vanilla CSS + [Tailwind CSS](https://tailwindcss.com/)
-* **Icons:** [Lucide React](https://lucide.dev/)
-* **Date Utilities:** Native JS Date APIs + [date-fns](https://date-fns.org/)
-
----
-
-## 🚀 စတင်အသုံးပြုပုံ (Getting Started)
-
-### ၁။ Clone & Dependency တင်သွင်းခြင်း
-```bash
-git clone https://github.com/your-username/burma-calendar.git
-cd burma-calendar
-npm install
-```
-
-### ၂။ Development Server စတင်ဖွင့်လှစ်ခြင်း
-```bash
-npm run dev
-```
-Browser တွင် `http://localhost:5173` ဖြင့် ဝင်ရောက်ကြည့်ရှုနိုင်ပါသည်။
-
-### ၃။ Production Build ပြုလုပ်ခြင်း
-```bash
-npm run build
-```
-
----
-
-## 👥 Contributors & Acknowledgements
-
-<table>
- <thead>
-  <tr>
-   <th colspan="3">Project Contributors</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td align="center">
-    <a href="https://github.com/sannlynnhtun-coding">
-      <img src="https://github.com/sannlynnhtun-coding.png" width="60px;" alt="Sann Lynn Htun"/><br />
-      <sub><b>Sann Lynn Htun</b></sub>
-    </a>
-   </td>
-   <td align="center">
-    <a href="https://github.com/mgchit-coding">
-      <img src="https://github.com/mgchit-coding.png" width="60px;" alt="Mg Chit"/><br />
-      <sub><b>Mg Chit</b></sub>
-    </a>
-   </td>
-   <td align="center">
-    <a href="https://github.com/dabria2004">
-      <img src="https://github.com/dabria2004.png" width="60px;" alt="Dabria"/><br />
-      <sub><b>Dabria</b></sub>
-    </a>
-   </td>
-  </tr>
- </tbody>
-</table>
 
 ---
 
